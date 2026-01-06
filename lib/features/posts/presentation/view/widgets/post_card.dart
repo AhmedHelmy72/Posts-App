@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:posts_app/posts/model/posts_model.dart';
-import 'package:posts_app/posts/presentation/view/widgets/post_footer.dart';
+import 'package:posts_app/features/posts/model/posts_model.dart';
+import 'package:posts_app/features/posts/presentation/view/widgets/post_footer.dart';
 
 class PostCard extends StatelessWidget {
   final PostsModel post;
@@ -43,9 +43,8 @@ class PostCard extends StatelessWidget {
                     : CrossFadeState.showFirst,
                 duration: const Duration(milliseconds: 250),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 15),
               PostFooter(post: post),
-
               Align(
                 alignment: Alignment.centerRight,
                 child: Icon(

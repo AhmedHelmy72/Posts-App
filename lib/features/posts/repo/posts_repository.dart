@@ -1,5 +1,5 @@
 import 'package:posts_app/core/services/api_service.dart';
-import 'package:posts_app/posts/model/posts_model.dart';
+import 'package:posts_app/features/posts/model/posts_model.dart';
 
 class PostsRepository {
   final ApiService apiService = ApiService();

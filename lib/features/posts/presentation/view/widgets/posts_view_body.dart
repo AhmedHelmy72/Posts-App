@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:posts_app/posts/cubit/posts_cubit.dart';
-import 'package:posts_app/posts/presentation/view/widgets/post_card.dart';
+import 'package:posts_app/features/posts/cubit/posts_cubit.dart';
+import 'package:posts_app/features/posts/presentation/view/widgets/post_card.dart';
 
 class PostsViewBody extends StatefulWidget {
   const PostsViewBody({super.key});
@@ -33,7 +33,6 @@ class _PostsViewBodyState extends State<PostsViewBody> {
         }
         if (state is PostsSuccess) {
           return ListView.builder(
-            padding: const EdgeInsets.all(12),
             itemCount: state.postsModel.length,
             itemBuilder: (context, index) {
               return PostCard(

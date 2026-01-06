@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:posts_app/posts/model/posts_model.dart';
-import 'package:posts_app/posts/repo/posts_repository.dart';
+import 'package:posts_app/features/posts/model/posts_model.dart';
+import 'package:posts_app/features/posts/repo/posts_repository.dart';
 
 part 'posts_state.dart';
 
