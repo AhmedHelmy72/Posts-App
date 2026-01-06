@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:posts_app/core/constants/api_url.dart';
 
-class ApiService {
-  final dio = Dio();
+final dio = Dio();
 
-  Future<List<dynamic>> getPosts() async {
+class ApiService {
+  Future<List<Map<String,dynamic>>> getPosts() async {
     try {
       final response = await dio.get(ApiUrls.posts);
       return response.data;
