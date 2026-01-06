@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:posts_app/splash/presentation/view/splash_view.dart';
+import 'package:posts_app/posts/presentation/view/posts_view.dart';
 
 void main() {
   runApp(const PostsApp());
@@ -13,7 +13,7 @@ class PostsApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(textTheme: GoogleFonts.cairoTextTheme()),
-      home: Scaffold(body: const SplashView()),
+      home: Scaffold(body: const PostsView()),
     );
   }
 }

@@ -1,3 +1,3 @@
 class ApiUrls {
-  static const String posts = 'https://jsonplaceholder.typicode.com/posts';
+  static const String posts = 'https://dummyjson.com/posts';
 }
